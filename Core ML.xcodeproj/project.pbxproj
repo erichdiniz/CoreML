@@ -15,6 +15,7 @@
 		3029FC33229C2CA20057034B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3029FC31229C2CA20057034B /* LaunchScreen.storyboard */; };
 		3029FC3E229C2CA30057034B /* CoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3029FC3D229C2CA30057034B /* CoreMLTests.swift */; };
 		3029FC49229C2CA30057034B /* CoreMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3029FC48229C2CA30057034B /* CoreMLUITests.swift */; };
+		3029FC59229C4E970057034B /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3029FC58229C4E970057034B /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3029FC22229C2C9F0057034B /* CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3029FC22229C2C9F0057034B /* Core ML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core ML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3029FC25229C2C9F0057034B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3029FC27229C2C9F0057034B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3029FC2A229C2C9F0057034B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,12 +44,13 @@
 		3029FC2F229C2CA20057034B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3029FC32229C2CA20057034B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3029FC34229C2CA20057034B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3029FC39229C2CA30057034B /* CoreMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3029FC39229C2CA30057034B /* Core MLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core MLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3029FC3D229C2CA30057034B /* CoreMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLTests.swift; sourceTree = "<group>"; };
 		3029FC3F229C2CA30057034B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3029FC44229C2CA30057034B /* CoreMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3029FC44229C2CA30057034B /* Core MLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core MLUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3029FC48229C2CA30057034B /* CoreMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLUITests.swift; sourceTree = "<group>"; };
 		3029FC4A229C2CA30057034B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3029FC58229C4E970057034B /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		3029FC19229C2C9E0057034B = {
 			isa = PBXGroup;
 			children = (
+				3029FC58229C4E970057034B /* Inceptionv3.mlmodel */,
 				3029FC24229C2C9F0057034B /* CoreML */,
 				3029FC3C229C2CA30057034B /* CoreMLTests */,
 				3029FC47229C2CA30057034B /* CoreMLUITests */,
@@ -89,9 +92,9 @@
 		3029FC23229C2C9F0057034B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3029FC22229C2C9F0057034B /* CoreML.app */,
-				3029FC39229C2CA30057034B /* CoreMLTests.xctest */,
-				3029FC44229C2CA30057034B /* CoreMLUITests.xctest */,
+				3029FC22229C2C9F0057034B /* Core ML.app */,
+				3029FC39229C2CA30057034B /* Core MLTests.xctest */,
+				3029FC44229C2CA30057034B /* Core MLUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,9 +134,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3029FC21229C2C9E0057034B /* CoreML */ = {
+		3029FC21229C2C9E0057034B /* Core ML */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3029FC4D229C2CA30057034B /* Build configuration list for PBXNativeTarget "CoreML" */;
+			buildConfigurationList = 3029FC4D229C2CA30057034B /* Build configuration list for PBXNativeTarget "Core ML" */;
 			buildPhases = (
 				3029FC1E229C2C9E0057034B /* Sources */,
 				3029FC1F229C2C9E0057034B /* Frameworks */,
@@ -143,14 +146,14 @@
 			);
 			dependencies = (
 			);
-			name = CoreML;
+			name = "Core ML";
 			productName = CoreML;
-			productReference = 3029FC22229C2C9F0057034B /* CoreML.app */;
+			productReference = 3029FC22229C2C9F0057034B /* Core ML.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3029FC38229C2CA30057034B /* CoreMLTests */ = {
+		3029FC38229C2CA30057034B /* Core MLTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3029FC50229C2CA30057034B /* Build configuration list for PBXNativeTarget "CoreMLTests" */;
+			buildConfigurationList = 3029FC50229C2CA30057034B /* Build configuration list for PBXNativeTarget "Core MLTests" */;
 			buildPhases = (
 				3029FC35229C2CA30057034B /* Sources */,
 				3029FC36229C2CA30057034B /* Frameworks */,
@@ -161,14 +164,14 @@
 			dependencies = (
 				3029FC3B229C2CA30057034B /* PBXTargetDependency */,
 			);
-			name = CoreMLTests;
+			name = "Core MLTests";
 			productName = CoreMLTests;
-			productReference = 3029FC39229C2CA30057034B /* CoreMLTests.xctest */;
+			productReference = 3029FC39229C2CA30057034B /* Core MLTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3029FC43229C2CA30057034B /* CoreMLUITests */ = {
+		3029FC43229C2CA30057034B /* Core MLUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3029FC53229C2CA30057034B /* Build configuration list for PBXNativeTarget "CoreMLUITests" */;
+			buildConfigurationList = 3029FC53229C2CA30057034B /* Build configuration list for PBXNativeTarget "Core MLUITests" */;
 			buildPhases = (
 				3029FC40229C2CA30057034B /* Sources */,
 				3029FC41229C2CA30057034B /* Frameworks */,
@@ -179,9 +182,9 @@
 			dependencies = (
 				3029FC46229C2CA30057034B /* PBXTargetDependency */,
 			);
-			name = CoreMLUITests;
+			name = "Core MLUITests";
 			productName = CoreMLUITests;
-			productReference = 3029FC44229C2CA30057034B /* CoreMLUITests.xctest */;
+			productReference = 3029FC44229C2CA30057034B /* Core MLUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3029FC1D229C2C9E0057034B /* Build configuration list for PBXProject "CoreML" */;
+			buildConfigurationList = 3029FC1D229C2C9E0057034B /* Build configuration list for PBXProject "Core ML" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,9 +223,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3029FC21229C2C9E0057034B /* CoreML */,
-				3029FC38229C2CA30057034B /* CoreMLTests */,
-				3029FC43229C2CA30057034B /* CoreMLUITests */,
+				3029FC21229C2C9E0057034B /* Core ML */,
+				3029FC38229C2CA30057034B /* Core MLTests */,
+				3029FC43229C2CA30057034B /* Core MLUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3029FC2E229C2C9F0057034B /* CoreML.xcdatamodeld in Sources */,
+				3029FC59229C4E970057034B /* Inceptionv3.mlmodel in Sources */,
 				3029FC28229C2C9F0057034B /* ViewController.swift in Sources */,
 				3029FC26229C2C9F0057034B /* AppDelegate.swift in Sources */,
 			);
@@ -286,12 +290,12 @@
 /* Begin PBXTargetDependency section */
 		3029FC3B229C2CA30057034B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3029FC21229C2C9E0057034B /* CoreML */;
+			target = 3029FC21229C2C9E0057034B /* Core ML */;
 			targetProxy = 3029FC3A229C2CA30057034B /* PBXContainerItemProxy */;
 		};
 		3029FC46229C2CA30057034B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3029FC21229C2C9E0057034B /* CoreML */;
+			target = 3029FC21229C2C9E0057034B /* Core ML */;
 			targetProxy = 3029FC45229C2CA30057034B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -485,7 +489,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML.app/CoreML";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Core ML.app/Core ML";
 			};
 			name = Debug;
 		};
@@ -506,7 +510,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML.app/CoreML";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Core ML.app/Core ML";
 			};
 			name = Release;
 		};
@@ -553,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3029FC1D229C2C9E0057034B /* Build configuration list for PBXProject "CoreML" */ = {
+		3029FC1D229C2C9E0057034B /* Build configuration list for PBXProject "Core ML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3029FC4B229C2CA30057034B /* Debug */,
@@ -562,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3029FC4D229C2CA30057034B /* Build configuration list for PBXNativeTarget "CoreML" */ = {
+		3029FC4D229C2CA30057034B /* Build configuration list for PBXNativeTarget "Core ML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3029FC4E229C2CA30057034B /* Debug */,
@@ -571,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3029FC50229C2CA30057034B /* Build configuration list for PBXNativeTarget "CoreMLTests" */ = {
+		3029FC50229C2CA30057034B /* Build configuration list for PBXNativeTarget "Core MLTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3029FC51229C2CA30057034B /* Debug */,
@@ -580,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3029FC53229C2CA30057034B /* Build configuration list for PBXNativeTarget "CoreMLUITests" */ = {
+		3029FC53229C2CA30057034B /* Build configuration list for PBXNativeTarget "Core MLUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3029FC54229C2CA30057034B /* Debug */,

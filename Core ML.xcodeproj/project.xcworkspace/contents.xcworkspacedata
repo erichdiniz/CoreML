@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CoreML.xcodeproj">
+      location = "self:/Users/erichdiniz/Desktop/Repositorio/CoreML/Core ML.xcodeproj">
    </FileRef>
 </Workspace>
